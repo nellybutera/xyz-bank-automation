@@ -1,0 +1,7 @@
+firstName,lastName,postCode,shouldPass,description
+Alice,Smith,10001,true,Valid alphabetic name and numeric post code
+John,Doe,20002,true,Valid alphabetic name and numeric post code
+Test123,Johnson,30003,false,First name contains numeric characters — AC1 violation
+Alice!,Smith,10001,false,First name contains special characters — AC1 violation
+Alice,Smith,ABCDE,false,Post code contains alphabetic characters — AC1 violation
+,Smith,10001,false,Empty first name — should be rejected

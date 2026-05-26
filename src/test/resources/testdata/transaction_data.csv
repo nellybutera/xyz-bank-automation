@@ -1,0 +1,9 @@
+amount,type,shouldSucceed,description
+1000,deposit,true,Valid positive deposit — AC5
+500,deposit,true,Valid positive deposit — AC5
+0,deposit,false,Zero deposit should be rejected — AC5
+-100,deposit,false,Negative deposit should be rejected — AC5
+500,withdraw,true,Valid withdrawal with sufficient balance — AC6
+-50,withdraw,false,Negative withdrawal should be rejected — AC6
+0,withdraw,false,Zero withdrawal should be rejected — AC6
+99999,withdraw,false,Withdrawal exceeding balance should be rejected — AC6
